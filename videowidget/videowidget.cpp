@@ -45,7 +45,7 @@ VideoWidget::VideoWidget(QWidget *parent) : QWidget(parent)
     left_camera_Pannel = new CameraWidget(this);
     left_camera_Pannel->setObjectName("left_camera_Pannel");
     left_camera_Pannel->setTitle("左后视角");
-    left_camera_Pannel->setPannelPosition(SignalRssi::POSITION_LEFT_TOP);
+    left_camera_Pannel->setPannelPosition(SignalRssi::POSITION_RIGHT_TOP);
 //    left_camera_Pannel->setVisible(true);
     left_camera_Pannel->setVisible(true);
 
