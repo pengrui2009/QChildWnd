@@ -123,6 +123,7 @@ private:
     QTimer *timerCheck;             //定时器检查设备是否在线
     QImage image;                   //要显示的图片
 
+    SignalRssi *flowPanel8;
     CameraWidget *left_camera_Pannel;
     CameraWidget *right_camera_Pannel;
 
@@ -262,7 +263,7 @@ public slots:
     void setViewMode(int mode);
 
     void setTitle(const QString value);
-
+    void setSignalRssi(const double value);
     void setPannelPosition(const SignalRssi::Position pos);
 
 

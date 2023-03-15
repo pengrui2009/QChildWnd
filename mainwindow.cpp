@@ -218,7 +218,7 @@ void MainWindow::initData()
     m_bg_image_ = QImage(":/image/logo.png");
 
     m_vehicle_runing_timer_ = new QTimer();
-    m_vehicle_runing_timer_->setInterval(100);
+    m_vehicle_runing_timer_->setInterval(1000);
     connect(m_vehicle_runing_timer_, SIGNAL(timeout()), this, SLOT(slot_timeout()));
     m_vehicle_runing_timer_->start();
 
@@ -306,6 +306,18 @@ void MainWindow::slot_timeout()
     } else {
         m_lane_start_offset_ = -10;
     }
+
+    static uint8_t count = 0;
+
+    QString image_files[2] = {":/image/video1.png", ":/image/video2.jpg"};
+    double timecost[2] = {120.3, 80.4};
+
+    QImage image = QImage(image_files[count]);
+    ui->left_camera_widget->updateImage(1, timecost[count], image);
+
+    count = (count++ >= 1) ? 0 : count;
+
+
     this->update();
 }
 

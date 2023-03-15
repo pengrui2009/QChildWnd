@@ -15,5 +15,7 @@
         <file>image/blue-white-line-pattern.jpg</file>
         <file>image/foton_logo.png</file>
         <file>image/logo.png</file>
+        <file>image/video1.png</file>
+        <file>image/video2.jpg</file>
     </qresource>
 </RCC>

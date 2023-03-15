@@ -38,7 +38,9 @@ VideoWidget::VideoWidget(QWidget *parent) : QWidget(parent)
     image = QImage();
 
     //顶部工具栏,默认隐藏,鼠标移入显示移除隐藏
-
+//    flowPanel8 = new SignalRssi(this);
+//    flowPanel8->setObjectName("flowPanel8");
+//    flowPanel8->setVisible(true);
 
     left_camera_Pannel = new CameraWidget(this);
     left_camera_Pannel->setObjectName("left_camera_Pannel");
@@ -1139,6 +1141,13 @@ void VideoWidget::clear()
     this->update();
 }
 
+void VideoWidget::setSignalRssi(const double value)
+{
+//    if (flowPanel8)
+//    {
+//        flowPanel8->setRssi(value);
+//    }
+}
 
 // 0:center 1:right 2:left
 void VideoWidget::setPannelPosition(const SignalRssi::Position pos)
@@ -1162,7 +1171,7 @@ void VideoWidget::setPannelPosition(const SignalRssi::Position pos)
 //            flowPanel8->setPosition(SignalRssi::POSITION_RIGHT_TOP);
 //        }
 //    }
-    this->update();
+//    this->update();
 }
 
 void VideoWidget::setTitle(const QString value)
