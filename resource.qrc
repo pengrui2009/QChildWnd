@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>other/qss/flatwhite.css</file>
+        <file>other/qss/lightblue.css</file>
+        <file>other/qss/psblack.css</file>
+        <file>other/image/blue-white-line-pattern.jpg</file>
+        <file>other/image/btn_close.png</file>
+        <file>other/image/btn_ok.png</file>
+        <file>other/image/diagonal-lines-48.png</file>
+        <file>other/image/diagonal-lines.png</file>
+        <file>other/image/Font Awesome Cheatsheet.png</file>
+        <file>other/image/foton_logo.png</file>
+        <file>other/image/msg_error.png</file>
+        <file>other/image/msg_info.png</file>
+        <file>other/image/msg_question.png</file>
+        <file>other/image/QFramework.png</file>
+        <file>other/image/video-beijing-time.png</file>
+        <file>other/image/video-view-effect.png</file>
+        <file>other/image/view.png</file>
+        <file>other/image/qt_zh_CN.qm</file>
+        <file>other/image/widgets.qm</file>
+        <file>other/image/fontawesome-webfont.ttf</file>
+    </qresource>
+</RCC>

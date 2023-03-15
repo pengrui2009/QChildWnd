@@ -1,0 +1,290 @@
+QWidget#centralWidget {
+    border: 0px solid #376B9A;
+    border-radius: 0px;
+/*    background: qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #000000,stop:1 #376B9A);*/
+/*    background-color: qradialgradient(cx: 0.5, cy: 0.5, fx: 0.5, fy: 0.5, radius: 1.0, stop: 0 #376B9A, stop: 1 #000000);*/
+}
+
+VideoWidget#left_guage_widget {
+    width:100px;
+    height:100px;
+}
+
+VideoWidget#right_guage_widget {
+    width:100px;
+    height:100px;
+}
+
+VideoWidget#front_camera_widget {
+    width:100px;
+    height:60px;
+}
+
+VideoWidget#rear_camera_widget {
+    width:100px;
+    height:60px;
+}
+
+VideoWidget#left_camera_widget {
+    width:100px;
+    height:60px;
+}
+
+VideoWidget#right_camera_widget {
+    width:100px;
+    height:60px;
+}
+
+QLabel {
+    color: #FFFFFF;
+    font: normal 24px;
+    icon-size:0px;
+    min-width:15px;
+    min-height:15px;
+}
+
+QGroupBox#groupBox_view{
+    font: normal 24px;
+    border:1px solid #FFFFFF;
+    border-radius:1px;
+
+    /*    margin-top:3ex;*/
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+QWidget#widget_4 {
+    width:300px;
+    height:180px;
+    background-color: #376B9A
+}
+
+QWidget#widget_5 {
+    width:300px;
+    height:180px;
+    background-color: #376B9A
+}
+
+QLabel#label_datetime {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:150px;
+    min-height:50px;
+/*    image:url(:/image/logo.png);*/
+}
+
+QLabel#label_softwareversion {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:150px;
+    min-height:50px;
+/*    background: qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #376B9A,stop:1 #000000);*/
+}
+
+QLabel#label_vehicleid {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:80px;
+    min-height:50px;
+/*    image:url(:/image/logo.png);*/
+}
+
+QLabel#label_ipaddress {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:180px;
+    min-height:50px;
+/*    background-image:url(:/image/blue-white-line-pattern.jpg);*/
+}
+
+QLabel#label_datarate {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:150px;
+    min-height:50px;
+/*    image:url(:/image/logo.png);*/
+}
+
+QLabel#label_satelite {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:180px;
+    min-height:50px;
+/*    image:url(:/image/logo.png);*/
+}
+
+QLabel#label_rssi {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:150px;
+    min-height:50px;
+/*    image:url(:/image/logo.png);*/
+}
+
+QLabel#label_netdelay {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:150px;
+    min-height:50px;
+/*    image:url(:/image/logo.png);*/
+}
+
+QCheckBox {
+     font: normal 16px;
+}
+
+
+QCheckBox::indicator,QGroupBox::indicator,QTreeWidget::indicator,QListWidget::indicator{
+width:13px;
+height:13px;
+}
+
+QCheckBox::indicator:unchecked{
+    image:url(:/qss/lightblue/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:disabled {
+    image:url(:/qss/lightblue/checkbox_unchecked_disable.png);
+}
+
+QCheckBox::indicator:checked {
+    image:url(:/qss/lightblue/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:disabled {
+    image:url(:/qss/lightblue/checkbox_checked_disable.png);
+}
+
+QCheckBox::indicator:indeterminate {
+    image:url(:/qss/lightblue/checkbox_parcial.png);
+}
+
+QCheckBox::indicator:indeterminate:disabled {
+    image:url(:/qss/lightblue/checkbox_parcial_disable.png);
+}
+
+/* 未下拉时，QComboBox的样式 */
+QComboBox {
+    color: #FFFFFF;
+    font: normal 16px;
+    icon-size:0px;
+    min-width:50px;
+    min-height:20px;
+    background: #1D3951;
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView {
+    outline: 1px solid #1D39FF;   /* 选定项的虚框 */
+    border: 0px solid yellow;   /* 整个下拉窗体的边框 */
+    background-color: #1D3951;   /* 整个下拉窗体的背景色 */
+    selection-color:#00FF00;
+    selection-background-color: green;   /* 整个下拉窗体被选中项的背景色 */
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView::item:hover {
+    color: #1D39FF;
+    background-color: #1D397F;   /* 整个下拉窗体的背景色 */
+}
+
+/* 下拉后，整个下拉窗体样式 */
+QComboBox QAbstractItemView::item:selected {
+    color: #1D397F;
+    background-color: #1D397F;   /* 整个下拉窗体的背景色 */
+}
+
+/* 设置为非编辑（setEditable(false)）!editable时，整个QComboBox的样式 */
+QComboBox:!editable {
+     background: #1D397F;
+}
+
+/* 设置为非编辑!editable时，点击整个QComboBox的样式 */
+QComboBox:!editable:on {
+     background: #1D3951;
+}
+
+QHeaderView::section {
+    font: normal 20px;
+    width:350px;
+    height:40px;
+    background: #1A324B;
+}
+
+QTreeWidget {
+    font: normal 16px;
+    border: 1px solid #1F3E57;
+    width:13px;
+    height:40px;
+    background: #1F3E57;
+}
+
+QTreeWidget::item {
+    border: 1px solid #1F3E57;
+    width:150px;
+    height:30px;
+    background: #1F3E57;
+}
+
+QTreeWidget::indicator {
+    border: 1px solid #1F3E57;
+    width:13px;
+    height:13px;
+    background:#1A324B;
+}
+
+QTreeView::item {
+    border: 0px solid #1F3E57;
+    background: #1F3E57;
+}
+
+QTreeView::item:hover {
+    border: 0px solid #1A324B;
+    background: #1A324B;
+}
+
+QTreeView::item:selected {
+    border: 1px solid #FFFFFF;
+}
+
+QTreeView::item:selected:active{
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6ea1f1, stop: 1 #567dbc);
+}
+
+QTreeView::item:selected:!active {
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #6b9be8, stop: 1 #577fbf);
+}
+
+QTreeWidget::indicator:unchecked {
+    image:url(:/qss/lightblue/checkbox_unchecked.png);
+}
+
+QTreeWidget::indicator:unchecked:disabled {
+    image:url(:/qss/lightblue/checkbox_unchecked_disable.png);
+}
+
+QTreeWidget::indicator:checked {
+    image:url(:/qss/lightblue/checkbox_checked.png);
+}
+
+QTreeWidget::indicator:checked:disabled {
+    image:url(:/qss/lightblue/checkbox_checked_disable.png);
+}
+
+QTreeWidget::indicator:indeterminate {
+    image:url(:/qss/lightblue/checkbox_parcial.png);
+}
+
+QTreeWidget::indicator:indeterminate:disabled {
+    image:url(:/qss/lightblue/checkbox_parcial_disable.png);
+}
